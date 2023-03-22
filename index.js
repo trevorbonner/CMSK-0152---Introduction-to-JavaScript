@@ -1,9 +1,7 @@
 document.getElementById('submitButton').addEventListener('click', function()
 {
-    //get value from newListItem
-    var newValue = document.getElementById('newListItem').value;
+    //get value from newListItem   
     //call addItem
-    addItem(newValue);
 });
 
 document.getElementById('setListColorButton').addEventListener('click', function()

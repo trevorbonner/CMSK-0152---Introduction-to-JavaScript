@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>API Demo</title>
+        <script src="index.js" type='text/javascript' defer></script>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="javascript:void(0);" onsubmit="addItem()">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" placeholder="First Name">
+            </br>
+            <label for="lastName" style="margin-right: 2px;">Last Name:</label>
+            <input type="text" id="lastName" placeholder="Last Name">
+            </br>
+            <label for="age" style="margin-right: 45px;">Age:</label>
+            <input type="number" id="age" placeholder="0">
+            </br>
+            </br>
+            <input type="submit" value="Add">
+        </form>
+
+        </br>
+        </br>
+
+        <table style="width: 500px;">
+            <thead>
+                <tr>
+                    <td>
+                        ID
+                    </td>
+                    <td>
+                        First Name
+                    </td>
+                    <td>
+                        Last Name
+                    </td>
+                    <td>
+                        Age
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="peopleTable">
+                <tr>
+                    <td>
+                        ID
+                    </td>
+                    <td>
+                        First Name
+                    </td>
+                    <td>
+                        Last Name
+                    </td>
+                    <td>
+                        Age
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

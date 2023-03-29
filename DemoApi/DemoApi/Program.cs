@@ -34,6 +34,12 @@ namespace DemoApi
 
             app.MapControllers();
 
+            app.UseCors(x => x
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials()
+            .SetIsOriginAllowed(origin => true));// Allow any origin  
+
             app.Run();
         }
     }
